@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PADFY</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+        <h1>PADFY</h1>
+        <input type="search" id="search-input" placeholder="Search notes...">
+    </header>
+    <main>
+        <button id="add-note-btn">Add Note</button>
+        <ul id="note-list-items"></ul>
+        <div id="note-form">
+            <input type="text" id="note-title" placeholder="Title">
+            <textarea id="note-content" placeholder="Content" ></textarea>
+                        <input type="text" id="note-tags" placeholder="Tags (comma separated)">
+            
+
+            <button id="save-note-btn">Save Note</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js')
+  }
+</script>
+
+    <script src="sw.js"></script>
+    
+</body>
+</html>
+
