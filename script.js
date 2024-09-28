@@ -1,4 +1,4 @@
-
+//bluefy 
 // Initialize notes array from local storage
 let notes = JSON.parse(localStorage.getItem('notes')) || [];
 
