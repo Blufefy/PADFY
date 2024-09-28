@@ -93,7 +93,7 @@ renderNotes();
 window.onload = function() {
   const toast = document.createElement('div');
   toast.className = 'toast';
-  toast.textContent = 'Welcome🥳 to PADFY📝 ! Tap add note and start typing to create a new note .🌊  Bluefy 🌊.';
+  toast.textContent = 'Welcome🥳 to BluePAD📝 ! Tap add note and start typing to create a new note .🌊  Bluefy 🌊.';
   document.body.appendChild(toast);
   
   // Auto-remove the toast after 3 seconds
